@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'memories',
     'accounts',
     'groups',
+    'bootstrap5',
+    'crispy_forms',
+    'crispy_bootstrap5'
 ]
 
 MIDDLEWARE = [
