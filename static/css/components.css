@@ -1,0 +1,41 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000000; /* Black background */
+    border-bottom: 2px solid #333333;
+    height: 60px; /* Set a fixed height for the navbar */
+}
+
+.navbar-brand {
+    height: 100%; /* Make sure the brand container takes the full height */
+}
+
+.navbar-logo {
+    height: 100%; /* Make the image fill the navbar height */
+    object-fit: contain; /* Ensure the image scales properly */
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #FFFFFF; /* White color for contrast */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #FF6F61; /* Orange color from the logo */
+    color: #000000; /* Black color for contrast */
+}
+
+.nav-link.active {
+    background-color: #FF6F61; /* Orange color from the logo */
+    color: #000000; /* Black color for contrast */
+}
