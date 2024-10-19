@@ -2,19 +2,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #000000; /* Black background */
-    border-bottom: 2px solid #333333;
-    height: 60px; /* Set a fixed height for the navbar */
+    background-color: #000000;
+    border-bottom: 4px solid #1E90FF;
+    height: 80px; 
 }
 
 .navbar-brand {
-    height: 100%; /* Make sure the brand container takes the full height */
+    height: 100%; 
 }
 
 .navbar-logo {
-    height: 100%; /* Make the image fill the navbar height */
-    object-fit: contain; /* Ensure the image scales properly */
+    height: 100%;
+    width: auto; /* Ensures the aspect ratio is maintained */
+    max-height: 80px; /* Matches the navbar height */
+    object-fit: cover; /* Ensures the image fills the container */
 }
 
 .navbar-nav {
@@ -23,7 +24,7 @@ nav {
 }
 
 .nav-link {
-    color: #FFFFFF; /* White color for contrast */
+    color: #FFFFFF; 
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -31,11 +32,21 @@ nav {
 }
 
 .nav-link:hover {
-    background-color: #FF6F61; /* Orange color from the logo */
-    color: #000000; /* Black color for contrast */
+    background-color: #FF6F61; 
+    color: #000000; 
 }
 
 .nav-link.active {
-    background-color: #FF6F61; /* Orange color from the logo */
-    color: #000000; /* Black color for contrast */
+    background-color: #FF6F61; 
+    color: #000000; 
+}
+
+.welcome-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 1rem;
 }
