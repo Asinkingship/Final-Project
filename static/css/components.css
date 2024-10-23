@@ -36,10 +36,7 @@ nav {
     color: #000000; 
 }
 
-.nav-link.active {
-    background-color: #FF6F61; 
-    color: #000000; 
-}
+
 
 .welcome-box {
     display: flex;
@@ -49,4 +46,47 @@ nav {
     color: #FFFFFF; /* White text */
     text-align: center;
     padding: 1rem;
+}
+
+
+.signup {
+    background-color: #1E90FF; /* Blue background to match */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px; /* Sets a small box size */
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+}
+
+.signup h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup button {
+    padding: 0.5rem .5rem; 
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6F61; 
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup button:hover {
+    background-color: #E65C50; 
 }
