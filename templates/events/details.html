@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %} Event Details {% endblock title %}
+
+{% block content %}
+
+    <h2>{{event.title}}</h2>
+    <label>Published on: {{event.date}}</label>
+
+    <hr />
+
+    <p>{{event.body}}</p>
+
+{% endblock content %}

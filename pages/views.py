@@ -7,3 +7,6 @@ def home_view(request):
 
 def group_view(request):
     return render(request, "pages/groups.html")
+
+def event_view(request):
+    return render(request, "pages/events.html")

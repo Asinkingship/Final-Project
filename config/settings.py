@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'memories',
     'accounts',
     'groups',
+    'events',
     'bootstrap5',
     'crispy_forms',
     'crispy_bootstrap5',
