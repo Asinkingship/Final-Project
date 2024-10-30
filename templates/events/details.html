@@ -5,11 +5,16 @@
 
 {% block content %}
 
+<div class="center-list">
     <h2>{{event.title}}</h2>
-    <label>Published on: {{event.date}}</label>
+    <p>{{event.description}}</p>
+    <p>Location: {{event.location}}</p>
+    <p>{{event.price}}</p>
+    <label>Event Date: {{event.date}}</label>
 
-    <hr />
 
     <p>{{event.body}}</p>
+
+</div>
 
 {% endblock content %}

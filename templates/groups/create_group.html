@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+  <h2>Create New Group</h2>
+  <form method="post">
+
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Group Name">
+    <button type="submit">Create Group</button>
+  </form>
+  
+{% endblock %}

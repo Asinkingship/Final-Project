@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ group.name }}{% endblock title %}
+
+{% block content %}
+
+<div class="group-detail-box">
+    <h2>{{ group.name }}</h2>
+    <p><a href="{% url 'invite_user' group.id %}">Invite Users</a></p>
+    <hr />
+    <h3>Events</h3>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.date }}</li>
+        {% empty %}
+            <li>No events scheduled.</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock content %}

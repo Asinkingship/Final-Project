@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <h2>Accept Invitation to {{ invitation.group.name }}</h2>
+  {% if user.email == invitation.email %}
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit">Accept Invitation</button>
+    </form>
+
+  {% else %}
+    <p>You are not authorized to accept this invitation.</p>
+  {% endif %}
+  
+{% endblock %}

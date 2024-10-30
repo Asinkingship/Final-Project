@@ -92,7 +92,7 @@ nav {
 }
 
 .create-event-box {
-    background-color: #1E90FF; /* Blue background to match */
+    background-color: #1E90FF;
     padding: .5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -106,17 +106,17 @@ nav {
 .create-event-box h2 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF; 
 }
 
 .create-event-box form {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem; /* Ensure consistent spacing */
+    gap: 0.2rem; 
 }
 
 .create-event-box button {
-    background-color: #FF6F61; /* Orange color from the logo */
+    background-color: #FF6F61; 
     color: #FFFFFF;
     font-size: 1.2rem;
     cursor: pointer;

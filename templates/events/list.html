@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load static%}
+{% load static %}
 
 {% block title %} Event List {% endblock title %}
 
@@ -11,9 +11,9 @@
 
     {% for event in event_list %}
 
-    <div class="event-detail">        
+    <div class="center-list">        
         <h2>{{event.title}}</h2>
-        <label>Published on: {{event.date}}</label>
+        <label>Event Date: {{event.date}}</label>
     
         <a href="{% url 'event_detail' event.id %}">View Details</a>
     </div>
