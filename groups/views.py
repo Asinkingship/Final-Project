@@ -49,5 +49,5 @@ def group_list(request):
 
 def group_detail(request, group_id):
     group = get_object_or_404(Group, pk=group_id)
-    events = Event.objects.filter(group=group)  # Fetch events related to the group
+    events = Event.objects.filter(group=group)  
     return render(request, 'groups/group_detail.html', {'group': group, 'events': events})
