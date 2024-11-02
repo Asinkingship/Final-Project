@@ -6,14 +6,14 @@
 
 <div class="group-detail-box">
     <h2>{{ group.name }}</h2>
-    <p><a href="{% url 'invite_user' group.id %}">Invite Users</a></p>
+    <p><a class="white-group" href="{% url 'invite_user' group.id %}">Invite Users</a></p>
     <hr />
     <h3>Events</h3>
     <ul>
         {% for event in events %}
             <li>{{ event.title }} - {{ event.date }}</li>
         {% empty %}
-            <li>No events scheduled.</li>
+            <li class="white-group">No events scheduled.</li>
         {% endfor %}
     </ul>
 </div>

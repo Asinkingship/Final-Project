@@ -8,11 +8,15 @@
     <h1>Your Groups!</h1>
     <p>This is the group page.</p>
     <p>Feel free to create a group, or navigate to a specific group to create or register for an event.</p>
-    <a href="{% url 'create_group' %}">Create a Group</a>
-    <ul>
+    <a class="white-group" href="{% url 'create_group' %}">Create a Group</a>
+    <div class="center-list"></div>
+    
         {% for group in groups %}
-        <li><a href="{% url 'group_detail' group.id %}">{{ group.name }}</a></li>
+
+        <h2><a class="white-group" href="{% url 'group_detail' group.id %}">{{ group.name }}</a></h2>
+
         {% endfor %}
-    </ul>
+    
+    </div>
 </div>
 {% endblock content %}
