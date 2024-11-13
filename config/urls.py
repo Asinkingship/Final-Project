@@ -18,10 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from pages.views import home_view, group_view, event_view
 from groups.views import create_group, invite_user, accept_invitation, group_list, group_detail
+from accounts.views import UserLoginView, UserSignupView, log_user_out
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name='home'),
+    path('home', home_view, name='home'),
+    path('', UserLoginView.as_view(), name='root_login'),
     path('groups/', group_list, name='group_list'),  
     path('groups/create/', create_group, name='create_group'),  
     path('group/<int:group_id>/', group_detail, name='group_detail'),  

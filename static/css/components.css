@@ -23,6 +23,13 @@ nav {
     gap: 1rem;
 }
 
+.navbar-username {
+    color: white;  
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+
 .nav-link {
     color: #FFFFFF; 
     text-decoration: none;
@@ -90,6 +97,32 @@ nav {
 .signup button:hover {
     background-color: #E65C50; 
 }
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.login form {
+    background-color: #007BFF; /* Blue color from the logo */
+    color: white; /* Ensure text is readable on blue background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a nice effect */
+    text-align: center; /* Center text inside the form */
+}
+
+.login h1 {
+    margin-bottom: 20px;
+}
+
+.login .login-button {
+    margin-top: 10px;
+}
+
 
 .create-event-box {
     background-color: #1E90FF;

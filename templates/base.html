@@ -10,17 +10,25 @@
 </head>
 <body>
 
-
     <nav>
         <a class="navbar-brand" href="#">           
-            <img src="{% static 'img/Clique.png' %}" alt="Clique Logo" class="navbar-logo"></a>
+            <img src="{% static 'img/Clique.png' %}" alt="Clique Logo" class="navbar-logo">
+        </a>
         <div class="navbar-nav">
             <a class="nav-link active" href="{% url 'home' %}">Home</a>
             <a class="nav-link" href="{% url 'group_list' %}">Groups</a>
             <a class="nav-link" href="{% url 'events_list' %}">Events</a>
         </div>
+        <div class="navbar-auth">
+            {% if user.is_authenticated %}
+                <span class="navbar-username">Welcome, {{ user.username }}!</span>
+                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            {% endif %}
+        </div>
     </nav>
-
 
     {% block content %}{% endblock content %}
 </body>
+</html>
