@@ -1,22 +1,20 @@
 {% extends 'base.html' %}
-{% load static%}
+{% load static %}
 
 {% block title %}Your Groups{% endblock title %}
 
 {% block content %}
-<div class="welcome-box">
+<div class="group-list">
     <h1>Your Groups!</h1>
     <p>This is the group page.</p>
     <p>Feel free to create a group, or navigate to a specific group to create or register for an event.</p>
-    <a class="white-group" href="{% url 'create_group' %}">Create a Group</a>
-    <div class="center-list"></div>
+    <a class="create-group-button" href="{% url 'create_group' %}">Create a Group</a>
     
-        {% for group in groups %}
-
-        <h2><a class="white-group" href="{% url 'group_detail' group.id %}">{{ group.name }}</a></h2>
-
-        {% endfor %}
-    
+    {% for group in groups %}
+    <div class="indv-groups">
+        <h2><a class="single-group" href="{% url 'group_detail' group.id %}">{{ group.name }}</a></h2>
     </div>
+    {% endfor %}
+    
 </div>
 {% endblock content %}

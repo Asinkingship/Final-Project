@@ -124,6 +124,38 @@ nav {
 }
 
 
+
+.create-event-button {
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.create-event-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.invite-user-button {
+    color: white;
+    text-decoration: none;
+    background-color: #FF6F61; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.invite-user-button:hover {
+    background-color: #E65C50; 
+}
+
+
+
 .create-event-box {
     background-color: #1E90FF;
     padding: .5rem;
@@ -158,4 +190,126 @@ nav {
 
 .create-event-box button:hover {
     background-color: #E65C50; 
+}
+
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+
+.event-list > div {
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.event-list h1 {
+    margin-bottom: 20px;
+}
+
+.indv-event {
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center;
+}
+
+.event-list a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+.group-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 20px;
+}
+
+
+.group-list > div {
+    background-color: #1E90FF;
+    color: white; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.group-list h1 {
+    margin-bottom: 20px;
+}
+
+
+.group-list p {
+    margin-bottom: 10px;
+}
+
+.group-list a.create-group-button {
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF; 
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.group-list a.create-group-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.indv-groups {
+    background-color: #1E90FF; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+    width: 100%; 
+    max-width: 200px; 
+    text-align: center;
+}
+
+
+.group-list a.single-group {
+    color: white; 
+    text-decoration: none;
+}
+
+
+.group-list a.single-group:hover {
+    text-decoration: underline; 
 }

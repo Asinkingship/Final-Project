@@ -22,7 +22,12 @@ class CreateEventView(CreateView):
     template_name = 'events/create_event.html'
     form_class = EventCreateForm
 
+    def form_valid(self, form):
+        form.instance.group_id = self.request.GET.get('group') 
+        return super().form_valid(form)
+
     def get_success_url(self):
-        return reverse('events_list')
+        return reverse('group_detail', kwargs={'group_id': self.object.group.id})
+
 
 # Create your views here.
