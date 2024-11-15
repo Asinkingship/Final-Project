@@ -10,7 +10,7 @@
     <p><a class="create-event-button" href="{% url 'create_event' %}?group={{ group.id }}">Create Event</a></p>
     <hr />
     <h3>Events</h3>
-    <ul>
+    <ul class="white-group">
         {% for event in events %}
             <li>{{ event.title }} - {{ event.date }}</li>
         {% empty %}
